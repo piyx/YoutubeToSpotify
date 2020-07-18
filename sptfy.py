@@ -28,6 +28,7 @@ class Spotify:
         )
 
         response_json = response.json()
+        print(response_json)
         playlist_id = response_json['id']
         return playlist_id
 
@@ -48,7 +49,6 @@ class Spotify:
             print(f"{artist}-{song_name} was not found!")
             return None
         else:
-            print(f"The song {artist}-{song_name} was added!")
             uri = song[0]['uri']
             self.uris['uris'].append(uri)
             return uri
