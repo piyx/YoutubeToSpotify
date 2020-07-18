@@ -28,7 +28,6 @@ class Spotify:
         )
 
         response_json = response.json()
-        print(response_json)
         playlist_id = response_json['id']
         return playlist_id
 
