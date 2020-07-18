@@ -5,6 +5,7 @@ from sptfy import Spotify
 def main():
     # Playlist url
     playlist_url = input("Enter youtube playlist url: ")
+    playlist_name = input("Enter playlist name: ")
 
     # Youtube instance
     yt = Youtube(playlist_url)
@@ -15,8 +16,7 @@ def main():
 
     # Spotify instance
     sptfy = Spotify()
-
-    playlst_id = sptfy.create_playlist("Youtube songs")
+    playlst_id = sptfy.create_playlist(playlist_name)
 
     for song_name, artist in songs_info.items():
         uri = sptfy.get_spotify_uri(artist, song_name)
