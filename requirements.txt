@@ -1,0 +1,5 @@
+selenium==3.141.0
+beautifulsoup4==4.9.1
+youtube-title-parse==1.0.0
+requests==2.24.0
+
