@@ -29,3 +29,5 @@ That's it.
 ![](imgs/url.png)  
 ![](imgs/name.png)  
 ![](imgs/ss.png)  
+<div style="width:50%"><img src="imgs/playlist.jpg" width="250"/><br/>
+<div style="width:50%"><img src="imgs/songs.jpg" width="250"/>
