@@ -1,2 +1,2 @@
-SPTFY_TOKEN = "your-spotiy-token"  # The token needs to refreshed once per hour
-USER_ID = "your-spotiy-user-id"
+SPTFY_TOKEN = "your-spotify-token"  # The token expires in one hour.
+USER_ID = "your-user-id"
