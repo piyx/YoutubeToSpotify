@@ -2,7 +2,7 @@
 
 ## Setup
 1. Download chromedriver (https://chromedriver.chromium.org/downloads)  
-Note: download the same version as your chrome browser.  
+Note: Download the same version as your chrome browser..  
       Do not install it, just place the chromedriver.exe in the same folder as the project itself.
 
 2. Copy your spotify user_id/username. (https://www.spotify.com/in/account/overview/)  
