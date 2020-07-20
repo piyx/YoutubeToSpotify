@@ -19,7 +19,7 @@ Note: The token expires in one hour. So go to the above website and get the toke
 
 ## How To Run
 1. Run main.py file.  
-2. Enter the youtube playlsit url.  
+2. Enter the youtube playlist url.  
 3. Enter what you want the playlist to be named.  
 
 That's it.  
