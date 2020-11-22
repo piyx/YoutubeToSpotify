@@ -1,5 +1,5 @@
-# spotifydl
-Spotify downloader
+# youtubetospotify
+A simple script to add all songs from youtube playlist to spotify playlist.
 
 ## What's different in version 2?
 ```
