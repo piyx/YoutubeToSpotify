@@ -62,6 +62,6 @@ Usher - Crash was added to playlist.
 ![](imgs/playlist.png)
 
 ## Result
-<img src="imgs/playlistphone.jpg" style="width:50%"><img src="imgs/playlistsongs.jpg" style="width:50%">
+<img src="imgs/playlistphone.jpg" width="49.5%"> <img src="imgs/playlistsongs.jpg" width="49.5%">
 
 
