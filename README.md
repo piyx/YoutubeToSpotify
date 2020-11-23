@@ -1,6 +1,9 @@
 # youtubetospotify
 A simple script to add all songs from youtube playlist to spotify playlist.
 
+## Example
+![](imgs/examplerun.gif)
+
 ## What's different in version 2?
 ```
 Faster: Uses Youtube API to get song info instead of selenium.
