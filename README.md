@@ -32,6 +32,19 @@ Reliable: Adds 85-95% of the songs from popular youtube playlists.
 ### Get youtube API key  
 [CLICK HERE TO SEE HOW TO CREATE YOUTUBE API KEY](GET_KEY.md)
 
+
+
+### Setting Environment Variables Mac and Linux
+
+
+- Rename the file `.env_sample` to `.env`
+
+- Edit the file by adding your credentials
+
+- run the following command to set your environment variable
+`source .env`
+
+
 ### Setting Environment Variables (Windows)
 ```
 set SPOTIFY_USER_ID <your_user_id>  
