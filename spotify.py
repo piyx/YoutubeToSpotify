@@ -71,7 +71,7 @@ class Spotify:
 
         return items[0]['uri']
 
-    def add_song_to_playlist(self, song_uri: str, playlist_id: str) -> None:
+    def add_song_to_playlist(self, song_uri: str, playlist_id: str) -> bool:
         url = f"https://api.spotify.com/v1/playlists/{playlist_id}/tracks"
         response = requests.post(
             url,
