@@ -30,7 +30,7 @@ Reliable: Adds 85-95% of the songs from popular youtube playlists.
 ![](imgs/redirecturi.png)
 
 ### Get youtube API key  
-[CLICK HERE TO SEE HOW TO CREATE YOUTUBE API KEY](GET_KEY.md)
+[CLICK HERE TO SEE HOW TO CREATE YOUTUBE API KEY](getkey.md)
 
 
 
@@ -53,8 +53,7 @@ set YOUTUBE_API_KEY <your_youtube_api_key>
 ```
 
 ## Usage
-
-`python main.py`
+`$ python main.py`
 
 
 ## Output
