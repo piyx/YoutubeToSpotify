@@ -36,13 +36,11 @@ Reliable: Adds 85-95% of the songs from popular youtube playlists.
 
 ### Setting Environment Variables Mac and Linux
 
+1. Rename the file `.env.sample` to `.env`
 
-- Rename the file `.env_sample` to `.env`
+2. Edit the file by adding your credentials
 
-- Edit the file by adding your credentials
-
-- run the following command to set your environment variable
-`source .env`
+3. Run the following command to set your environment variable `source .env`
 
 
 ### Setting Environment Variables (Windows)
