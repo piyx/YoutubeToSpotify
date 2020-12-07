@@ -63,10 +63,13 @@ class Spotify:
             }
         )
 
+        if not response.ok:
+            return None
+
         results = response.json()
         items = results['tracks']['items']
+
         if not items:
-            print(f"{artist}-{song_name} was not found!")
             return None
 
         return items[0]['uri']
