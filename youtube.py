@@ -48,11 +48,21 @@ class Youtube:
 
         for item in result['items']:
             song = item['snippet']['title']
-            try:
-                artist, title = get_artist_title(song)
-                self.songs.append(clean_song_info(Song(artist, title)))
-            except:
-                print(f'Error parsing {song}')
+            videoId = item['contentDetails']['videoId']
+            response = youtube.videos().list(
+                part="snippet",
+                id=videoId
+            ).execute()
+            for video_item in response['items']:
+                separator = '-'
+                channelTitle = video_item['snippet']['channelTitle']
+                artist = channelTitle.split(separator, 1)[0]
+                songTitle = video_item['snippet']['localized']['title']
+                try:
+                    artist, title = get_artist_title(artist + " - " + songTitle)
+                    self.songs.append(clean_song_info(Song(artist, title)))
+                except:
+                    print(f'Error parsing {song}')
 
         return result
 
