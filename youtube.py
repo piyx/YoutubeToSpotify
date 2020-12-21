@@ -40,7 +40,7 @@ class Youtube:
 
     def __fetch_songs(self, youtube, playlist_id, page_token=None):
         result = youtube.playlistItems().list(
-            part="snippet",
+            part="snippet, contentDetails",
             playlistId=playlist_id,
             maxResults="300",
             pageToken=page_token
