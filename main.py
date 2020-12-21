@@ -22,6 +22,8 @@ def main():
         if was_added:
             print(f'{song.artist} - {song.title} was added to playlist.')
 
+    total_songs_added = sp._num_playlist_songs(spotify_playlist_id)
+    print(f'Added {total_songs_added} songs out of {len(songs)}')
 
 if __name__ == "__main__":
     main()
