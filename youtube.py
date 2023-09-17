@@ -4,7 +4,6 @@ from oauth2client.tools import argparser
 from dataclasses import dataclass
 from pprint import pprint
 import re
-import os
 
 
 @dataclass
@@ -26,16 +25,17 @@ def clean_song_info(song: Song) -> Song:
 
 
 class Youtube:
-    DEVELOPER_KEY = os.getenv('YOUTUBE_API_KEY')
     YOUTUBE_API_SERVICE_NAME = "youtube"
     YOUTUBE_API_VERSION = "v3"
 
-    def __init__(self):
+    def __init__(self, DEVELOPER_KEY):
+        print(DEVELOPER_KEY)
+        DEVELOPER_KEY = DEVELOPER_KEY
         self.songs = []
         self.youtube = build(
             Youtube.YOUTUBE_API_SERVICE_NAME,
             Youtube.YOUTUBE_API_VERSION,
-            developerKey=Youtube.DEVELOPER_KEY
+            developerKey=DEVELOPER_KEY
         )
 
     def __fetch_songs(self, youtube, playlist_id, page_token=None):

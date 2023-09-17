@@ -1,9 +1,12 @@
 from spotify import Spotify
 from youtube import Youtube
+import os
+from dotenv import load_dotenv
 
 def main():
-    sp = Spotify()
-    yt = Youtube()
+    load_dotenv()
+    sp = Spotify(os.environ.get('SPOTIFY_USER_ID'), os.environ.get('SPOTIFY_CLIENT_ID'), os.environ.get('SPOTIFY_CLIENT_SECRET'), os.environ.get('SPOTIFY_REDIRECT_URI'))
+    yt = Youtube(os.environ.get('YOUTUBE_API_KEY'))
     
     yt_playlist_id = input("Enter youtube playlist id: ")
     spotify_playlist_name = input("Enter a name for your spotify playlist: ")
