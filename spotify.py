@@ -5,13 +5,14 @@ import requests
 import os
 
 
+
 class SpotifyClientManager:
-    def __init__(self):
+    def __init__(self, SPOTIFY_USER_ID, SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REDIRECT_URI):
         self.scope = 'playlist-modify-private'
-        self.user_id = os.getenv('SPOTIFY_USER_ID')
-        self.client_id = os.getenv('SPOTIFY_CLIENT_ID')
-        self.client_secret = os.getenv('SPOTIFY_CLIENT_SECRET')
-        self.redirect_uri = os.getenv('SPOTIFY_REDIRECT_URI')
+        self.user_id = SPOTIFY_USER_ID
+        self.client_id = SPOTIFY_CLIENT_ID
+        self.client_secret = SPOTIFY_CLIENT_SECRET
+        self.redirect_uri = SPOTIFY_REDIRECT_URI
 
     @property
     def token(self):
@@ -28,8 +29,8 @@ class SpotifyClientManager:
 
 
 class Spotify:
-    def __init__(self):
-        self.spotify = SpotifyClientManager()
+    def __init__(self, SPOTIFY_USER_ID, SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REDIRECT_URI):
+        self.spotify = SpotifyClientManager(SPOTIFY_USER_ID, SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REDIRECT_URI)
 
     def create_playlist(self, playlist_name: str) -> str:
         request_body = {

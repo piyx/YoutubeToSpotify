@@ -33,24 +33,15 @@ Reliable: Adds 85-95% of the songs from popular youtube playlists.
 [CLICK HERE TO SEE HOW TO CREATE YOUTUBE API KEY](getkey.md)
 
 
-
-### Setting Environment Variables Mac and Linux
-
-1. Rename the file `.env.sample` to `.env`
-
-2. Edit the file by adding your credentials
-
-3. Run the following command to set your environment variable `source .env`
-
-
-### Setting Environment Variables (Windows)
+### Input Your Credentials
 ```
-set SPOTIFY_USER_ID <your_user_id>  
-set SPOTIFY_CLIENT_ID <your_client_id>  
-set SPOTIFY_CLIENT_SECRET <your_client_secret>  
-set SPOTIFY_REDIRECT_URI 'http://localhost:8888/callback'  
-set YOUTUBE_API_KEY <your_youtube_api_key> 
+SPOTIFY_USER_ID <your_user_id>  
+SPOTIFY_CLIENT_ID <your_client_id>  
+SPOTIFY_CLIENT_SECRET <your_client_secret>  
+SPOTIFY_REDIRECT_URI 'http://localhost:8888/callback'  
+YOUTUBE_API_KEY <your_youtube_api_key> 
 ```
+Change `.env.sample` to `.env`.
 
 ## Usage
 `$ python main.py`
